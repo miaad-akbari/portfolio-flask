@@ -73,3 +73,50 @@ nav {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+.hero {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.hero-terminal {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 400px;
+}
+
+.terminal-header {
+    background: #333;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+    color: #999;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.terminal-body {
+    padding: 1rem;
+    font-family: monospace;
+    color: #4ade80;
+}
+
+.prompt { color: #ffbd2e; }
+.output { color: #94a3b8; }
