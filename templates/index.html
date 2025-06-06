@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <a href="#" class="logo"><i class="fas fa-terminal"></i> miad</a>
+        <a href="#" class="logo">{miad}</a>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -18,8 +18,22 @@
         </div>
     </nav>
     <section class="hero">
-        <h1>Hi, I'm Miad Akbari</h1>
-        <p><i class="fas fa-server"></i> DevOps Engineer</p>
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Miad Akbari</span></h1>
+            <p class="hero-title">DevOps Engineer — I automate infrastructure</p>
+        </div>
+        <div class="hero-terminal">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">miad@devops ~ $</span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="prompt">$</span> kubectl get clusters</p>
+                <p class="output">prod-01    Ready    180d</p>
+            </div>
+        </div>
     </section>
     <section id="about">
         <h2>About Me</h2>
