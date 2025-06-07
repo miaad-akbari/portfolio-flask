@@ -34,6 +34,7 @@ nav {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
+    font-family: monospace;
 }
 
 .nav-links a {
@@ -48,10 +49,14 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
+    padding: 6rem 2rem 2rem;
     background: var(--bg-dark);
     color: var(--white);
+    gap: 2rem;
+}
+
+.hero-content {
+    text-align: center;
 }
 
 .hero h1 {
@@ -59,33 +64,16 @@ nav {
     margin-bottom: 1rem;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.skill-card {
-    background: var(--white);
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.hero {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    align-items: center;
+.highlight {
+    color: var(--accent);
 }
 
 .hero-terminal {
     background: #1e1e1e;
     border-radius: 8px;
     overflow: hidden;
-    min-width: 400px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .terminal-header {
@@ -120,3 +108,18 @@ nav {
 
 .prompt { color: #ffbd2e; }
 .output { color: #94a3b8; }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.skill-card {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
