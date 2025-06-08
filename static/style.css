@@ -135,3 +135,22 @@ nav {
     border-radius: 8px;
     border-left: 4px solid var(--accent);
 }
+
+.contact-links {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.contact-links a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--navy);
+    color: var(--white);
+}
