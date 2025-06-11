@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background: var(--bg-primary);
@@ -34,7 +38,7 @@ nav {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .nav-links a {
@@ -102,7 +106,7 @@ nav {
 
 .terminal-body {
     padding: 1rem;
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
     color: #4ade80;
 }
 
@@ -148,13 +152,6 @@ nav {
     text-decoration: none;
 }
 
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: var(--navy);
-    color: var(--white);
-}
-
 .certs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -168,4 +165,11 @@ footer {
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--navy);
+    color: var(--white);
 }
