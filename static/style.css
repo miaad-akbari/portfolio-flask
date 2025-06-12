@@ -190,3 +190,13 @@ footer {
     background: var(--navy);
     color: var(--white);
 }
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
