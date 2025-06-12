@@ -45,6 +45,11 @@ nav {
     margin-left: 1.5rem;
     text-decoration: none;
     color: var(--white);
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
 }
 
 .hero {
@@ -126,6 +131,12 @@ nav {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .timeline {
@@ -165,6 +176,12 @@ nav {
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 footer {
@@ -172,10 +189,4 @@ footer {
     padding: 2rem;
     background: var(--navy);
     color: var(--white);
-}
-
-.skill-card:hover, .cert-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
 }
