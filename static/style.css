@@ -200,3 +200,11 @@ section h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
 }
+
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
