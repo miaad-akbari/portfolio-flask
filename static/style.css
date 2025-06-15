@@ -885,3 +885,8 @@ footer p i {
         text-align: center;
     }
 }
+
+/* Fix for section overlap with fixed nav */
+section:first-of-type {
+    padding-top: 6rem;
+}
