@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miad Akbari</title>
+    <title>Miad Akbari — DevOps Engineer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Floating particles background -->
     <div class="bg-grid"></div>
-    <nav>
-        <a href="#" class="logo">{miad}</a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#certs">Certs</a>
-            <a href="#contact">Contact</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <span class="logo-bracket">{</span>miad<span class="logo-bracket">}</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#certs">Certs</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                Available for opportunities
+            </div>
             <h1>Hi, I'm <span class="highlight">Miad Akbari</span></h1>
-            <p class="hero-title">DevOps Engineer — I automate infrastructure</p>
+            <p class="hero-title">
+                <i class="fas fa-terminal"></i>
+                DevOps Engineer — I automate infrastructure, streamline deployments, and make systems bulletproof.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Incident Reduction</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">12x</span>
+                    <span class="stat-label">Faster Deployments</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#experience" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+                <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Get In Touch</a>
+            </div>
         </div>
         <div class="hero-terminal">
             <div class="terminal-header">
@@ -33,85 +68,339 @@
                 <span class="terminal-title">miad@devops ~ $</span>
             </div>
             <div class="terminal-body">
-                <p><span class="prompt">$</span> kubectl get clusters</p>
+                <p><span class="prompt">$</span> <span class="cmd">cat</span> about_me.txt</p>
+                <p class="output">DevOps Engineer | Kubernetes | Terraform | Python</p>
+                <p><span class="prompt">$</span> <span class="cmd">kubectl</span> get clusters</p>
+                <p class="output">NAME       STATUS   AGE   VERSION</p>
                 <p class="output">prod-01    Ready    180d  v1.28.2</p>
                 <p class="output">staging    Ready    90d   v1.28.2</p>
-                <p><span class="prompt">$</span> terraform apply --auto-approve</p>
-                <p class="output">Apply complete! Resources: 47 added.</p>
+                <p><span class="prompt">$</span> <span class="cmd">terraform</span> apply --auto-approve</p>
+                <p class="output success">Apply complete! Resources: 47 added, 0 changed, 0 destroyed.</p>
+                <p><span class="prompt">$</span> <span class="cmd">echo</span> "Let's build something amazing"</p>
+                <p class="output">Let's build something amazing ✨</p>
+                <p><span class="prompt">$</span> <span class="cursor">█</span></p>
             </div>
         </div>
     </section>
-    <section id="about">
+
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <span class="section-tag">01</span>
-            <h2>About Me</h2>
-            <p>I'm a DevOps Engineer based in Tehran, Iran.</p>
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a DevOps Engineer who thrives on building and maintaining infrastructure at scale. 
+                        My expertise spans the entire DevOps lifecycle — from provisioning Kubernetes clusters 
+                        with Terraform and Ansible, to designing CI/CD pipelines that cut deployment time from 
+                        <strong>1 hour to 5 minutes</strong>.
+                    </p>
+                    <p>
+                        I believe in automation-first thinking: if something is done twice, it should be automated. 
+                        Whether it's IP unblocking workflows, DNS management for multi-tenant SaaS platforms, or 
+                        distributed storage solutions — I build systems that are reliable, scalable, and 
+                        <strong>require minimal manual intervention</strong>.
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Tehran, Iran</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <span class="info-label">Education</span>
+                            <span class="info-value">B.Sc. Software Engineering</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <span class="info-label">Certifications</span>
+                            <span class="info-value">CKA, LPIC-1/2, CCNA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="skills">
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
         <div class="container">
-            <span class="section-tag">02</span>
-            <h2>Skills</h2>
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2>Tech Stack & Skills</h2>
+            </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Containers</h3>
-                    <p>Kubernetes, Docker, Rancher</p>
+                    <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                    <h3>Container Orchestration</h3>
+                    <div class="skill-tags">
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                        <span>Rancher</span>
+                        <span>RKE2</span>
+                        <span>Cluster-API</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>IaC</h3>
-                    <p>Terraform, Ansible</p>
+                    <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>CI/CD & GitOps</h3>
+                    <div class="skill-tags">
+                        <span>GitLab CI/CD</span>
+                        <span>ArgoCD</span>
+                        <span>Terraform</span>
+                        <span>Ansible</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>CI/CD</h3>
-                    <p>GitLab CI, ArgoCD</p>
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span>CloudStack</span>
+                        <span>vSphere</span>
+                        <span>Kamaji</span>
+                        <span>Ceph-Rook</span>
+                        <span>Longhorn</span>
+                    </div>
                 </div>
                 <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Observability</h3>
+                    <div class="skill-tags">
+                        <span>Splunk</span>
+                        <span>EFK Stack</span>
+                        <span>MinIO</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
                     <h3>Databases</h3>
-                    <p>PostgreSQL, MongoDB, Redis</p>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                        <span>Patroni</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Programming & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Bash</span>
+                        <span>Git</span>
+                        <span>Jira</span>
+                        <span>Confluence</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="experience">
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <span class="section-tag">03</span>
-            <h2>Experience</h2>
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2>Professional Experience</h2>
+            </div>
             <div class="timeline">
+                <!-- Job 1 -->
                 <div class="timeline-item">
-                    <h3>DevOps Engineer — AFRANET</h3>
-                    <p>May 2024 – Present</p>
+                    <div class="timeline-marker">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DevOps Engineer</h3>
+                                <p class="company"><i class="fas fa-building"></i> AFRANET — Tehran, Iran</p>
+                            </div>
+                            <span class="date-badge">May 2024 – Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <strong>Automated Kubernetes Cluster Provisioning:</strong> Built a self-service web platform 
+                                using Python, Terraform, and Ansible to provision RKE2 clusters on vSphere VMs. Integrated 
+                                Cluster-API with vSphere and Kamaji providers, enabling dev teams to spin up sandbox 
+                                environments on demand.
+                            </li>
+                            <li>
+                                <strong>IP Unblocking Automation:</strong> Developed a Python-based solution that automatically 
+                                removes blacklisted IPs from Barracuda via the AbuseIPDB API, reducing IP blacklisting 
+                                incidents by <strong>95%</strong> and dramatically improving service reliability.
+                            </li>
+                            <li>
+                                <strong>Distributed Storage Migration:</strong> Deployed Ceph-Rook to replace Longhorn, 
+                                solving critical data persistence challenges and providing a more scalable, accessible 
+                                storage solution for production workloads.
+                            </li>
+                            <li>
+                                <strong>Automated Backup System:</strong> Co-developed Bash-based backup automation for 
+                                databases across Kubernetes clusters, with reliable S3-compatible storage uploads for 
+                                disaster recovery.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!-- Job 2 -->
                 <div class="timeline-item">
-                    <h3>DevOps Engineer — Heyboddy</h3>
-                    <p>Apr 2023 – May 2024</p>
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DevOps Engineer</h3>
+                                <p class="company"><i class="fas fa-building"></i> Heyboddy (Avan Pardazesh Pouya) — Tehran, Iran</p>
+                            </div>
+                            <span class="date-badge">Apr 2023 – May 2024</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <strong>CI/CD Pipeline Design:</strong> Architected GitLab CI and ArgoCD pipelines that 
+                                reduced deployment time from <strong>1 hour to 5 minutes</strong> — a 12x improvement.
+                            </li>
+                            <li>
+                                <strong>DNS/Ingress Manager Microservice:</strong> Built an internal tool for the backend 
+                                team to automate domain creation on Kubernetes Ingress and cPanel DNS records for a 
+                                multi-tenant SaaS platform. Integrated CertManager for auto-generated and auto-renewed 
+                                Let's Encrypt SSL certificates — eliminating manual tenant onboarding entirely.
+                            </li>
+                            <li>
+                                <strong>Storage & Database Infrastructure:</strong> Deployed Longhorn for distributed 
+                                storage and implemented Patroni-based PostgreSQL clustering for high-availability 
+                                database operations.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Network Engineer</h3>
+                                <p class="company"><i class="fas fa-building"></i> HomaPharmed — Tehran, Iran</p>
+                            </div>
+                            <span class="date-badge">Feb 2021 – Apr 2023</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                Implemented enterprise file-sharing systems and Zimbra mail servers, establishing 
+                                reliable internal communication infrastructure.
+                            </li>
+                            <li>
+                                Deployed Zabbix monitoring with custom Python-based SMS notification alerts, 
+                                enabling proactive incident response and reducing downtime.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="certs">
+
+    <!-- Certifications & Education -->
+    <section id="certs" class="section section-alt">
         <div class="container">
-            <span class="section-tag">04</span>
-            <h2>Certifications</h2>
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2>Certifications & Education</h2>
+            </div>
             <div class="certs-grid">
-                <div class="cert-card">CKA</div>
-                <div class="cert-card">LPIC-1/2</div>
-                <div class="cert-card">CCNA</div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>CKA</h3>
+                    <p>Certified Kubernetes Administrator</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-linux"></i></div>
+                    <h3>LPIC-1 / LPIC-2</h3>
+                    <p>Linux Professional Institute</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>CCNA</h3>
+                    <p>Routing & Switching</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Web App Hacking</h3>
+                    <p>Security Certification</p>
+                </div>
+                <div class="cert-card education-card">
+                    <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>B.Sc. Software Engineering</h3>
+                    <p>Bachelor's Degree</p>
+                </div>
+                <div class="cert-card education-card">
+                    <div class="cert-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h3>Associate in Architecture</h3>
+                    <p>Associate Degree</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact">
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <span class="section-tag">05</span>
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:akbarimiad.lduhn@gmail.com">Email</a>
-                <a href="https://linkedin.com/in/miadakbari">LinkedIn</a>
-                <a href="https://github.com/miaad">GitHub</a>
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2>Let's Connect</h2>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:akbarimiad.lduhn@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Me</span>
+                    <small>akbarimiad.lduhn@gmail.com</small>
+                </a>
+                <a href="tel:+989101374170" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Me</span>
+                    <small>+98 910 137 4170</small>
+                </a>
+                <a href="https://linkedin.com/in/miadakbari" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                    <small>linkedin.com/in/miadakbari</small>
+                </a>
+                <a href="https://github.com/miaad-akbari" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                    <small>github.com/miaad</small>
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Miad Akbari</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Miad Akbari. Built with <i class="fas fa-heart"></i> and Flask.</p>
+            <div class="footer-links">
+                <a href="https://github.com/miaad" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/miadakbari" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:akbarimiad.lduhn@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
